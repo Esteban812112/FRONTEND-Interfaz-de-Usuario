@@ -1,0 +1,36 @@
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.85); /* Fondo blanco translúcido */
+  backdrop-filter: blur(8px); /* Efecto futurista de desenfoque */
+  padding: 20px 40px;
+  border-top: 1px solid #d0e7ff;
+  height: 100px;
+  box-shadow: 0 -4px 12px rgba(0, 153, 255, 0.1);
+}
+
+.footer-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-icon-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #007bff; /* Azul eléctrico base */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 50%;
+  transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-icon-btn:hover {
+  color: #00c8ff;
+  transform: scale(1.15);
+  box-shadow: 0 0 12px rgba(0, 200, 255, 0.4); /* Brillo al pasar */
+}

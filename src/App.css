@@ -1,0 +1,81 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;  
+  height: 100%;  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ffffff, #e0f0ff);
+  color: #0a2540;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Logo futurista */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: filter 300ms ease-in-out, transform 0.3s ease;
+  will-change: filter, transform;
+  filter: drop-shadow(0 0 10px #00bfff);
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 20px #00bfff);
+  transform: scale(1.05);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 20px #61dafb);
+}
+
+/* Animación para logos reactivos */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Tarjeta de presentación / contenedor */
+.card {
+  padding: 2em;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #cce6ff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 136, 255, 0.15);
+  max-width: 600px;
+  margin: 2em auto;
+  backdrop-filter: blur(6px);
+}
+
+/* Texto informativo */
+.read-the-docs {
+  color: #5a7ca8;
+  text-align: center;
+  margin-top: 1em;
+  font-size: 0.95rem;
+}
+
+/* Adaptación responsive */
+@media (max-width: 768px) {
+  .card {
+    padding: 1.5em;
+    margin: 1em;
+  }
+
+  .logo {
+    height: 4em;
+  }
+}

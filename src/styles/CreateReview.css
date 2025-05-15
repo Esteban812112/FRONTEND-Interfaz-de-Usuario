@@ -1,0 +1,142 @@
+/* Estilo futurista con fondo azul claro y tonos blancos/azules */
+
+.create-review-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #4d8ed4, #cce6ff);
+  box-shadow: 0 8px 20px rgba(0, 136, 255, 0.15);
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+  color: #0a2540;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Título "Reseña" */
+.create-review-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #070acd; /* Azul oscuro */
+  margin-bottom: 2rem;
+}
+
+/* Imagen y estrellas */
+.image-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.image-placeholder {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px dashed #007acc;
+  border-radius: 15px;
+  background-color: #fff5f0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #3399ff;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.image-placeholder:hover {
+  background-color: #e6f7ff;
+}
+
+.image-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.plus-icon {
+  font-size: 3rem;
+  color: #3399ff;
+}
+
+.rating-stars {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+button.star {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+button.star:hover,
+button.star.selected {
+  color: #ffc107;
+}
+
+/* Formulario */
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #99ccff;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #0a2540;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #3399ff;
+  box-shadow: 0 0 6px rgba(0, 119, 204, 0.4);
+}
+
+.form-textarea {
+  resize: none;
+  min-height: 150px;
+}
+
+/* Botón de envío */
+.submit-btn {
+  width: fit-content;
+  background-color: #0077cc;
+  color: #ffffff;
+  padding: 0.8rem 1.8rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #005bb5;
+  transform: scale(1.03);
+}
+
+/* Mensaje de error */
+.error-message {
+  color: #ff4d4f;
+  font-size: 0.95rem;
+  text-align: center;
+}

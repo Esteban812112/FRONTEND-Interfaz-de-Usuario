@@ -1,0 +1,127 @@
+.quote-management {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.quote-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.quote-form {
+  flex: 1;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quote-list {
+  flex: 2;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quote-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.quote-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+}
+/* Estilos para el campo de detalles */
+.quote-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+  resize: vertical; /* Permitir redimensionar solo verticalmente */
+}
+
+.quote-form textarea:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Estilos para el campo de precio estimado */
+.quote-form input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.quote-form input[type="number"]:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Estilos para el campo de estado */
+.quote-form select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #ffffff;
+  transition: border-color 0.3s;
+}
+
+.quote-form select:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.quote-management button {
+  background-color: #1abc9c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.quote-management button:hover {
+  background-color: #16a085;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.quote-management button.secondary {
+  background-color: #3498db;
+  margin-left: 5px;
+}
+
+.quote-management button.secondary:hover {
+  background-color: #2980b9;
+}
+
+.quote-management button.delete {
+  background-color: #e74c3c;
+  margin-left: 5px;
+}
+
+.quote-management button.delete:hover {
+  background-color: #c0392b;
+}
+  

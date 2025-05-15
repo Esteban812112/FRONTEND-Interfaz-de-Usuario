@@ -1,0 +1,18 @@
+/* src/styles/Graph.css */
+.graph-container {
+  width: 80%;               /* Ajusta el porcentaje según el tamaño deseado */
+  max-width: 900px;         /* Tamaño máximo */
+  margin: 0 auto;           /* Centra el gráfico */
+  padding: 20px;            /* Espaciado alrededor del gráfico */
+  box-sizing: border-box;   /* Asegura que el padding no afecte el tamaño */
+}
+
+/* Control de altura máxima */
+.graph-container canvas {
+  max-height: 400px;        /* Establece la altura máxima del gráfico */
+  width: 100% !important;   /* Asegura que el gráfico ocupe el 100% del ancho del contenedor */
+}
+.graph-container canvas {
+  width: 100% !important;
+  max-height: 400px !important;  /* Puedes ajustar esto según lo necesites */
+}
